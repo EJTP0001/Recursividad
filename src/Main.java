@@ -1,13 +1,19 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-void main() {
-    //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-    // to see how IntelliJ IDEA suggests fixing it.
-    IO.println(String.format("Hello and welcome!"));
+public class Main {
+    public static void main(String[] args) {
 
-    for (int i = 1; i <= 5; i++) {
-        //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-        // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-        IO.println("i = " + i);
+        System.out.println("FACTORIAL:");
+        System.out.println("Recursivo: " + Factorial.factorialRecursivo(5));
+        System.out.println("Iterativo: " + Factorial.factorialIterativo(5));
+        System.out.println("Cola rec: " + Factorial.factorialCola(5, 1));
+
+        System.out.println("\nEJERCICIO 4:");
+        System.out.println("Potencia (2^10): " + Ejercicio4.potenciaRapida(2, 10));
+
+        char[] c = "holaMUndo".toCharArray();
+        Ejercicio4.invertirMejorado(c, 0, c.length - 1);
+        System.out.println("Invertir: " + new String(c));
+
+        int[] b = {1, 0, 1, 1, 0, 1, 1};
+        System.out.println("Contar unos: " + Ejercicio4.contarUnosIterativo(b));
     }
 }
