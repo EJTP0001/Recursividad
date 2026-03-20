@@ -201,3 +201,5 @@ Ojo para correr desde la terminal (asi lo hice yo):
 cd src
 javac *.java
 java Main
+
+:)
